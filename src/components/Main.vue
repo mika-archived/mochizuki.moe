@@ -25,7 +25,7 @@
               .project
                 h5 {{project.name}}
                 small
-                  a(:href="project.url") {{project.url}}
+                  a(:href="project.url" target="_blank") {{project.url}}
                 p {{project.work}}
 
 
