@@ -6,114 +6,113 @@
           .rounded
             img(src="https://www.gravatar.com/avatar/8f7571eb815b4c6b2ef883b1c8ed97dd?s=256")
 
-        h2 Fuyuno Mikazuki
+        h2 Fuyno Mikazuki
+        p せめて心だけでも健康に生きたい
 
     b-row.justify-content-md-center
+      b-col(md="12")
+        b-card(title="Public Products / Repositories")
+          .card-text
+            b-row
+              b-col(md="12" lg="6")
+                section(v-for="product in products.filter((element, index) => index % 2 == 0)" :key="product.name")
+                  product(:product="product")
+              b-col(md="12" lg="6")
+                section(v-for="product in products.filter((element, index) => index % 2 == 1)" :key="product.name")
+                  product(:product="product")
+
       b-col(md="12" lg="6")
-        b-card(title="Skills")
-          .card-text(v-for="(values, key) in skills")
-            section
-              p {{capitalize(key)}}
-              ul(v-for="value in values")
-                li {{value}}
+        b-card(title="Interests")
+          .card-text
+            ul(v-for="interest in interests" :key="interest")
+              li {{interest}}
 
       b-col(md="12" lg="6")
-        b-card(title="Projects")
+        b-card(title="Links")
           .card-text
-            p Projects I am involved in ...
-            .projects(v-for="project in projects")
-              .project
-                h5 {{project.name}}
-                small
-                  a(:href="project.url" target="_blank") {{project.url}}
-                p {{project.work}}
-
-
-        b-card(title="Interested technologies")
-          .card-text
-            ul(v-for="interest in interests")
-              li {{interest}} 
-
-        b-card(title="Contact")
-          .card-text
-            ul(v-for="contact in contacts")
+            ul(v-for="link in links" :key="link.name")
               li
-                | {{contact.name}} 
-                a(:href="contact.link.href" target="_blank") {{contact.link.text}}
-
+                | {{`${link.name} `}}
+                a(:href="link.a.href" target="_blank") {{link.a.text}}
+             
 </template>
 
 <script>
+import Product from "./Product.vue";
+
 export default {
   name: "Main",
+  components: {
+    Product
+  },
   data() {
     return {
-      skills: {
-        languages: [
-          "C#",
-          "Ruby",
-          "AltJS (TypeScript, CoffeeScript)",
-          "JavaScript",
-          "HTML (Slim, Pug, Haml)",
-          "CSS (Sass)",
-          "Java"
-        ],
-        frameworks: [
-          "Ruby on Rails",
-          "Sinatra",
-          "Prism",
-          "React",
-          "Vue",
-          "Bootstrap"
-        ],
-        platforms: [
-          "Web (Frontend, Backend, Server, Electron)",
-          "Windows (WPF, UWP)",
-          "Windows 10 Mobile"
-        ]
-      },
-      projects: [
+      products: [
         {
-          name: "CLEN",
-          url: "https://clen.be/",
-          work: "Frontend, Backend and Server-Side Engineer"
+          name: "administrate-field-enumerize",
+          repo: "mika-f/administrate-field-enumerize",
+          languages: ["Ruby"],
+          url: "https://rubygems.org/gems/administrate-field-enumerize",
+          description: "Administrate の Enumerize 拡張"
         },
         {
-          name: "MAngaNIA",
-          url: "https://mangania.jp/",
-          work: "Backend Engineer"
+          name: "amazon-url-shortener",
+          repo: "mika-f/amazon-url-shortener",
+          languages: ["JavaScript"],
+          url: "https://github.com/mika-f/amazon-url-shortener",
+          description: "Amazon の URL を整形する Chrome 拡張"
+        },
+        {
+          name: "croudia4r",
+          repo: "mika-f/croudia4r",
+          languages: ["Ruby"],
+          url: "https://rubygems.org/gems/croudia4r",
+          description: "Croudia Rubygem"
+        },
+        {
+          name: "crypto-faucets",
+          repo: "mika-f/crypto-faucets",
+          languages: ["JavaScript", "TypeScript", "Vue"],
+          url: "https://ccfaucet.mochizuki.moe",
+          description: "仮想通貨乞食用まとめサイト"
+        },
+        {
+          name: "embed_media",
+          repo: "mika-f/embed_media",
+          languages: ["Ruby"],
+          url: "https://rubygems.org/gems/embed_media",
+          description: "YouTube などを埋め込めるタグを追加する Rails 拡張"
+        },
+        {
+          name: "omniauth-croudia",
+          repo: "mika-f/omniauth-croudia",
+          languages: ["Ruby"],
+          url: "https://rubygems.org/gems/omniauth-croudia",
+          description: "OmniAuth の Croudia 拡張"
+        },
+        {
+          name: "Phoenix",
+          repo: "mika-f/Phoenix",
+          languages: ["C#"],
+          url: "https://mochizuki.moe/phoenix/",
+          description: "VAIO のためのソフトウェア更新通知アプリケーション"
+        },
+        {
+          name: "Sagitta",
+          repo: "mika-f/Sagitta",
+          languages: ["C#"],
+          url: "https://github.com/mika-f/Sagitta",
+          description: ".NET Standard 1.4 用に作成された pixiv クライアントライブラリ"
         }
       ],
-      contacts: [
-        {
-          name: "Twitter",
-          link: {
-            href: "https://twitter.com/MikazukiFuyuno",
-            text: "@MikazukiFuyuno"
-          }
-        },
-        {
-          name: "GitHub",
-          link: {
-            href: "https://github.com/mika-f",
-            text: "@mika-f"
-          }
-        },
-        {
-          name: "E-Mail",
-          link: {
-            href: "mailto:me@mochizuki.moe",
-            text: "me@mochizuki.moe"
-          }
-        }
-      ],
-      interests: ["Unity (Unity3D)", "Blockchain", "Machine Learning"]
+      interests: ["Cryptocurrency", "Blockchain", "Machine Learning", "Unity3D"],
+      links: [
+        { name: "Twitter", a: { text: "@MikazukiFuyuno", href: "https://twitter.com/MikazukiFuyuno" } },
+        { name: "GitHub", a: { text: "@mika-f", href: "https://github.com/mika-f" } },
+        { name: "Blog", a: { text: "みかづきメモ", href: "https://mikazuki.hatenablog.jp" } },
+        { name: "E-Mail", a: { text: "me@mochizuki.moe", href: "mailto:me@mochizuki.moe" } }
+      ]
     };
-  },
-  methods: {
-    capitalize(str) {
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    }
   }
 };
 </script>
@@ -136,16 +135,6 @@ export default {
     border: solid white 5px;
     height: 192px;
     width: 192px;
-  }
-}
-
-.projects {
-  .project {
-    padding: 5px 10px;
-
-    h5 {
-      margin-bottom: 0;
-    }
   }
 }
 

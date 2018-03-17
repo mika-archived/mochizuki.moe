@@ -41,13 +41,19 @@ export default {
   font-weight: 200;
 }
 
+body {
+  background-image: url(./static/memphis-colorful.png);
+  background-repeat: repeat;
+  background-size: 400px 400px;
+}
+
 #app {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.5);
   color: #2c3e50;
   min-height: 100vh;
   padding-top: 60px;
