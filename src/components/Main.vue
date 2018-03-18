@@ -6,7 +6,7 @@
           .rounded
             img(src="https://www.gravatar.com/avatar/8f7571eb815b4c6b2ef883b1c8ed97dd?s=256")
 
-        h2 Fuyno Mikazuki
+        h2 Fuyuno Mikazuki
         p せめて心だけでも健康に生きたい
 
     b-row.justify-content-md-center
