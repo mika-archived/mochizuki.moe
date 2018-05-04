@@ -101,8 +101,8 @@ export default {
           name: "Sagitta",
           repo: "mika-f/Sagitta",
           languages: ["C#"],
-          url: "https://github.com/mika-f/Sagitta",
-          description: ".NET Standard 1.4 用に作成された pixiv クライアントライブラリ"
+          url: "https://mochizuki.moe/Sagitta/",
+          description: ".NET Standard 2.0 用に作成された pixiv クライアントライブラリ"
         }
       ],
       interests: ["Cryptocurrency", "Blockchain", "Machine Learning", "Unity3D"],
