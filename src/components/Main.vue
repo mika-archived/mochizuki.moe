@@ -56,11 +56,11 @@ export default {
           description: "Administrate の Enumerize 拡張"
         },
         {
-          name: "amazon-url-shortener",
-          repo: "mika-f/amazon-url-shortener",
+          name: "webshop-url-shortener",
+          repo: "mika-f/webshop-url-shortener",
           languages: ["JavaScript"],
-          url: "https://github.com/mika-f/amazon-url-shortener",
-          description: "Amazon の URL を整形する Chrome 拡張"
+          url: "https://github.com/mika-f/webshop-url-shortener",
+          description: "オンラインショップの URL を整形する Chrome 拡張"
         },
         {
           name: "croudia4r",
@@ -103,6 +103,13 @@ export default {
           languages: ["C#"],
           url: "https://mochizuki.moe/Sagitta/",
           description: ".NET Standard 2.0 用に作成された pixiv クライアントライブラリ"
+        },
+        {
+          name: "language-badge",
+          repo: "mika-f/language-badge",
+          languages: ["CSS"],
+          url: "https://www.npmjs.com/package/language-badge",
+          description: "GitHub の Language Color に合わせたバッジ"
         }
       ],
       interests: ["Cryptocurrency", "Blockchain", "Machine Learning", "Unity3D"],

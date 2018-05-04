@@ -7,6 +7,7 @@ import router from './router'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'language-badge/language-badge.css'
 
 Vue.use(BootstrapVue);
 
