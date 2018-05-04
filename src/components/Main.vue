@@ -111,7 +111,11 @@ export default {
           url: "https://www.npmjs.com/package/language-badge",
           description: "GitHub の Language Color に合わせたバッジ"
         }
-      ],
+      ].sort((a, b) => {
+        const an = a.name.toLowerCase();
+        const bn = b.name.toLowerCase();
+        return an < bn ? -1 : an > bn ? 1 : 0;
+      }),
       interests: ["Cryptocurrency", "Blockchain", "Machine Learning", "Unity3D"],
       links: [
         { name: "Twitter", a: { text: "@MikazukiFuyuno", href: "https://twitter.com/MikazukiFuyuno" } },
