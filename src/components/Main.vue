@@ -101,7 +101,7 @@ export default {
           name: "Sagitta",
           repo: "mika-f/Sagitta",
           languages: ["C#"],
-          url: "https://mochizuki.moe/Sagitta/",
+          url: "https://sagitta.mochizuki.moe/",
           description: ".NET Standard 2.0 用に作成された pixiv クライアントライブラリ"
         },
         {
