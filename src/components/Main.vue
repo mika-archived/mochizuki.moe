@@ -110,6 +110,13 @@ export default {
           languages: ["CSS"],
           url: "https://www.npmjs.com/package/language-badge",
           description: "GitHub の Language Color に合わせたバッジ"
+        },
+        {
+          name: "Kotoha",
+          repo: "mika-f/Kotoha",
+          languages: ["C#"],
+          url: "https://github.com/mika-f/Kotoha",
+          description: "VOICEROID2 などへの共通アクセス API を提供するライブラリ"
         }
       ].sort((a, b) => {
         const an = a.name.toLowerCase();
