@@ -1,62 +1,29 @@
 <template>
   <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
     <router-view/>
   </div>
 </template>
 
-<script>
-export default {
-  name: "app"
-};
-</script>
-
-<style>
-@font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 200;
-}
-
-body {
-  background-image: url(./static/memphis-colorful.png);
-  background-repeat: repeat;
-  background-size: 400px 400px;
-}
-
+<style lang="scss">
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p",
-    sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(249, 249, 249, 0.5);
+  text-align: center;
   color: #2c3e50;
-  min-height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 20px;
+}
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
