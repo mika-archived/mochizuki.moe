@@ -1,16 +1,16 @@
 <template lang="pug">
-  #app
-    #nav
-      router-link(to="/") Home
-      |  | 
-      router-link(to="/about") About
+  #app.container
     router-view
 </template>
 
 <style lang="scss">
+html,
 body {
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
   background-image: url("./assets/pattern/memphis-colorful.png");
   background-repeat: repeat;
 }
@@ -21,16 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  // background-color: rgba(168, 168, 168, 0);
+  min-height: 100vh;
 }
 </style>
