@@ -12,13 +12,15 @@
         .card-body
           section
             p
-              | I am a frontend, backend and .NET engineer in Tokyo, Japan.
+              | I am a frontend, backend and .NET engineer making web apps, modules, Windows apps and .NET libraries.
               br
               | If you are interested in me, please see 
               router-link(to="projects") projects
-              | &nbsp;and 
+              | , 
               router-link(to="contributings") contributings
-              | .
+              | &nbsp;and 
+              router-link(to="hobbies") hobbies
+              | &nbsp;(ӧ◡ӧ✿).
           section
             .items
               .item.tooltip(v-for="link in links" :key="link.icon.replace(' ', '.')" :data-tooltip="link.text")
@@ -77,6 +79,7 @@ export default class Home extends Vue {
 
   .card {
     text-align: initial;
+    max-width: 625px;
   }
 
   .items {
