@@ -24,10 +24,10 @@
               .item.tooltip(v-for="link in links" :key="link.icon.replace(' ', '.')" :data-tooltip="link.text")
                 template(v-if="link.href.startsWith('http')")
                   a(:href="link.href" target="_blank")
-                    i.fa-2x.fa-fw(:class="link.icon")
+                    font-awesome(:icon="link.icon")
                 template(v-else)
                   a(:href="link.href")
-                    i.fa-2x.fa-fw(:class="link.icon")
+                    font-awesome(:icon="link.icon")
 
 </template>
 
@@ -36,11 +36,17 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import { State } from "vuex-class";
 
 import Avatar from "@/presentationals/Avatar.vue";
+import FontAwesome from "@/presentationals/FontAwesome.vue";
 
 import { ILink } from "@/models/link";
 import { IRootState } from "@/models/state";
 
-@Component({ components: { avatar: Avatar } })
+@Component({
+  components: {
+    avatar: Avatar,
+    "font-awesome": FontAwesome
+  }
+})
 export default class Home extends Vue {
   @State((state: IRootState) => state.links)
   public links!: ILink[];
