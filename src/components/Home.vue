@@ -62,11 +62,8 @@ export default class Home extends Vue {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
-  h1 {
-    // http://getskeleton.com/
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+  // http://getskeleton.com/
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   section {
     margin: 0 0 10px 0;
