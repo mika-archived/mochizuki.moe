@@ -17,7 +17,7 @@
               | If you are interested in me, please see 
               router-link(to="projects") projects
               | , 
-              router-link(to="contributings") contributings
+              router-link(to="contributions") contributions
               | &nbsp;and 
               router-link(to="hobbies") hobbies
               | &nbsp;(ӧ◡ӧ✿).

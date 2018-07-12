@@ -5,9 +5,7 @@
       template(v-if="project.isArchived")
         small.text-gray &nbsp;archived
     p
-      span.badge(v-for="language in project.languages" :class="asClass(language)")
-        | {{language}}
-      br
+      language-badges(:languages="project.languages")
       template(v-if="project.isOpenSource")
         a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
         | ・
@@ -20,12 +18,14 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 
 import DynamicLink from "@/presentationals/DynamicLink.vue";
+import LanguageBadges from "@/presentationals/LanguageBadges.vue";
 
 import { IProject } from "@/models/project";
 
 @Component({
   components: {
-    "dynamic-link": DynamicLink
+    "dynamic-link": DynamicLink,
+    "language-badges": LanguageBadges
   }
 })
 export default class Project extends Vue {
@@ -47,17 +47,5 @@ h3,
 h4,
 h5 {
   margin-bottom: 0.2em;
-}
-
-.badge {
-  margin: 0 5px 0 0;
-
-  &::not(:first-child) {
-    margin: 0 5px;
-  }
-
-  &::after {
-    content: none;
-  }
 }
 </style>
