@@ -7,20 +7,7 @@
       .card-body
         .items
           .item(v-for="project in projects" :key="project.name")
-            h4
-              | {{project.name}}
-              template(v-if="project.isArchived")
-                small.text-gray &nbsp;archived
-            p
-              span.badge(v-for="language in project.languages" :class="asClass(language)")
-                | {{language}}
-              br
-              template(v-if="project.isOpenSource")
-                a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
-                | ・
-              dynamic-link(:href="project.website") Website
-              br
-              | {{project.description}}
+            project(:project="project")
 </template>
 
 <script lang="ts">
@@ -28,8 +15,7 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import { State } from "vuex-class";
 
 import Breadcrumb from "@/presentationals/Breadcrumb.vue";
-import FontAwesome from "@/presentationals/FontAwesome.vue";
-import DynamicLink from "@/presentationals/DynamicLink.vue";
+import Project from "@/presentationals/Project.vue";
 
 import { IProject } from "@/models/project";
 import { IRootState } from "@/models/state";
@@ -37,20 +23,12 @@ import { IRootState } from "@/models/state";
 @Component({
   components: {
     breadcrumb: Breadcrumb,
-    "dynamic-link": DynamicLink,
-    "font-awesome": FontAwesome
+    project: Project
   }
 })
 export default class Projects extends Vue {
   @State((state: IRootState) => state.projects)
   public projects!: IProject[];
-
-  public asClass(language: string): string {
-    return `badge-${language
-      .toLocaleLowerCase()
-      .replace("#", "sharp")
-      .replace("+", "plus")}`;
-  }
 }
 </script>
 
@@ -96,26 +74,6 @@ export default class Projects extends Vue {
 
       align-self: stretch;
       padding: 7.5px;
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        margin-bottom: 0.2em;
-      }
-
-      .badge {
-        margin: 0 5px 0 0;
-
-        &::not(:first-child) {
-          margin: 0 5px;
-        }
-
-        &::after {
-          content: none;
-        }
-      }
     }
   }
 }
