@@ -57,13 +57,7 @@ export default class Home extends Vue {
 
 <style lang="scss" scoped>
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  // http://getskeleton.com/
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 
   section {
     margin: 0 0 10px 0;

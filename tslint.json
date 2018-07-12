@@ -9,6 +9,9 @@
     ]
   },
   "rules": {
+    "arrow-parens": [
+      "as-needed"
+    ],
     "quotemark": [
       true,
       "double"
