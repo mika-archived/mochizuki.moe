@@ -119,6 +119,14 @@ const projects: IProject[] = sortBy([
     repository: "mika-f/croudia4r",
     isArchived: true
   },
+  {
+    name: "mika-f.github.io",
+    website: "/",
+    languages: ["TypeScript", "Vue", "JavaScript"],
+    description: "This website!",
+    isOpenSource: true,
+    repository: "mika-f/mika-f.github.io",
+  }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 
 export {

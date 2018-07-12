@@ -13,7 +13,7 @@
 import { Vue, Component } from "vue-property-decorator";
 
 @Component
-export default class Projects extends Vue {
+export default class Breadcrumb extends Vue {
   public hierarchy: Array<{}> = [];
 
   public created(): void {

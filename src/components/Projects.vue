@@ -18,7 +18,7 @@
               template(v-if="project.isOpenSource")
                 a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
                 | ・
-              a(:href="project.website" target="_blank") Website
+              dynamic-link(:href="project.website") Website
               br
               | {{project.description}}
 </template>
@@ -29,6 +29,7 @@ import { State } from "vuex-class";
 
 import Breadcrumb from "@/presentationals/Breadcrumb.vue";
 import FontAwesome from "@/presentationals/FontAwesome.vue";
+import DynamicLink from "@/presentationals/DynamicLink.vue";
 
 import { IProject } from "@/models/project";
 import { IRootState } from "@/models/state";
@@ -36,6 +37,7 @@ import { IRootState } from "@/models/state";
 @Component({
   components: {
     breadcrumb: Breadcrumb,
+    "dynamic-link": DynamicLink,
     "font-awesome": FontAwesome
   }
 })
