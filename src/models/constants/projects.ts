@@ -53,12 +53,12 @@ const projects: IProject[] = sortBy([
     isArchived: true
   },
   {
-    name: "language-badges",
+    name: "language-badge",
     website: "https://mochizuki.moe/language-badge/",
     languages: ["CSS"],
     description: "Bootstrap-Style Badges of GitHub colors for all the programming languages.",
     isOpenSource: true,
-    repository: "mika-f/language-badges"
+    repository: "mika-f/language-badge"
   },
   {
     name: "Pyxis",
