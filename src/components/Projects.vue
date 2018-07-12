@@ -15,8 +15,9 @@
               span.badge(v-for="language in project.languages" :class="asClass(language)")
                 | {{language}}
               br
-              a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
-              | ・
+              template(v-if="project.isOpenSource")
+                a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
+                | ・
               a(:href="project.website" target="_blank") Website
               br
               | {{project.description}}
