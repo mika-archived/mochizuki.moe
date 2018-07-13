@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Contributions from "@/components/Contributions.vue";
+import Favorites from "@/components/Favorites.vue";
 import Home from "@/components/Home.vue";
 import Projects from "@/components/Projects.vue";
 
@@ -23,6 +24,11 @@ export default new Router({
       path: "/contributions",
       name: "contributions",
       component: Contributions
+    },
+    {
+      path: "/favorites",
+      name: "favorites",
+      component: Favorites
     }
   ],
 });

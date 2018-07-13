@@ -19,7 +19,7 @@
               | , 
               router-link(to="contributions") contributions
               | &nbsp;and 
-              router-link(to="hobbies") hobbies
+              router-link(to="favorites") favorites
               | &nbsp;(ӧ◡ӧ✿).
           section
             .items
