@@ -12,6 +12,11 @@ const links: ILink[] = [
     text: "Follow me on GitHub"
   },
   {
+    icon: "fas fa-envelope",
+    href: "mailto:me@mochizuki",
+    text: "Email to me"
+  },
+  {
     icon: "fas fa-pencil",
     href: "https://mikazuki.hatenablog.jp/",
     text: "Read technical blog"
