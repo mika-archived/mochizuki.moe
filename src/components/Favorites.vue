@@ -1,5 +1,5 @@
 <template lang="pug">
-  .content
+  .content(data-content="sub")
     breadcrumb
     .card
       .card-header
@@ -37,66 +37,21 @@ export default class Favorites extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  /*
-  align-items: flex-start;
-  align-content: flex-start;
-  flex-direction: row;
-  */
-  margin: 0 auto;
-  padding: 20px;
+section {
+  padding: 0 0 20px 0;
 
-  @media (min-width: 640px) {
-    max-width: 90%;
+  &:last-child {
+    padding: 0 0 10px 0;
+
+    .divider {
+      display: none;
+    }
   }
 
-  @media (min-width: 960px) {
-    max-width: 80%;
-  }
-
-  .card {
-    width: 100%;
-
-    section {
-      padding: 0 0 20px 0;
-
-      &:last-child {
-        padding: 0 0 10px 0;
-
-        .divider {
-          display: none;
-        }
-      }
-
-      .items {
-        width: 100%;
-
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-
-        .item {
-          flex: 0 1 100%;
-          min-width: 100%;
-
-          @media (min-width: 640px) {
-            flex: 0 1 100%;
-            min-width: 100%;
-          }
-
-          @media (min-width: 840px) {
-            flex: 0 1 50%;
-            min-width: 50%;
-          }
-
-          @media (min-width: 1420px) {
-            flex: 0 1 33%;
-            min-width: 33%;
-          }
-        }
-      }
+  .items {
+    .item {
+      align-self: auto;
+      padding: 0;
     }
   }
 }
