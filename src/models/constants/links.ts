@@ -13,7 +13,7 @@ const links: ILink[] = [
   },
   {
     icon: "fas fa-envelope",
-    href: "mailto:me@mochizuki",
+    href: "mailto:me@mochizuki.moe",
     text: "Email to me"
   },
   {
