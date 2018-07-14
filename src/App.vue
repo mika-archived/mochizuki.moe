@@ -1,6 +1,7 @@
 <template lang="pug">
   #app.container
-    router-view
+    transition(name="transition-animate" mode="out-in" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut")
+      router-view
 </template>
 
 <style lang="scss">
@@ -22,5 +23,9 @@ body {
   color: #2c3e50;
   // background-color: rgba(168, 168, 168, 0);
   min-height: 100vh;
+}
+
+.animated {
+  animation-duration: 0.5s;
 }
 </style>
