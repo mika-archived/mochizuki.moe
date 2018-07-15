@@ -13,7 +13,7 @@ const projects: IProject[] = sortBy([
   },
   {
     name: "Sagitta",
-    website: "https://sagitta.mochizuki.moe",
+    website: "https://www.nuget.org/packages/Sagitta/",
     languages: ["C#"],
     description: "\"Sagitta\" is pixiv API wrapper for .NET Standard 2.0.",
     isOpenSource: true,
