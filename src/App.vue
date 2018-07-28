@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background-image: url("./assets/pattern/memphis-colorful.png");
+  background-image: url("./assets/memphis-colorful.png");
   background-repeat: repeat;
 }
 
