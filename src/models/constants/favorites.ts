@@ -128,6 +128,23 @@ const favorites: ICategorizedFavorites = {
           href: "https://www.youtube.com/channel/UCG09qajPDZdPtLsTkW7mJQA"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
+    },
+    {
+      name: "Playlists",
+      favorites: sortBy([
+        {
+          name: "VOCALOID on YouTube",
+          href: "https://www.youtube.com/playlist?list=PL2t1NYPsZqCOxjK1fpOOREWM9az9xtzOE"
+        },
+        {
+          name: "SoundCloud",
+          href: "https://soundcloud.com/mikazuki_f/likes"
+        },
+        {
+          name: "VOCALOID on niconico",
+          href: "http://www.nicovideo.jp/mylist/61087753"
+        }
+      ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     }
   ]
 };
