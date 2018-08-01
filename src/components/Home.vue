@@ -18,6 +18,8 @@
               router-link(to="projects") projects
               | , 
               router-link(to="contributions") contributions
+              | , 
+              router-link(to="personality") personality
               | &nbsp;and 
               router-link(to="favorites") favorites
               | &nbsp;(ӧ◡ӧ✿).
