@@ -15,7 +15,7 @@ export default class LanguageBadges extends Vue {
     return `badge-${language
       .toLocaleLowerCase()
       .replace("#", "sharp")
-      .replace("+", "plus")}`;
+      .replace(/\+/g, "plus")}`;
   }
 }
 </script>
@@ -30,6 +30,11 @@ export default class LanguageBadges extends Vue {
 
   &::after {
     content: none;
+  }
+
+  &-hlsl {
+    color: #000;
+    background-color: #ccc;
   }
 }
 </style>
