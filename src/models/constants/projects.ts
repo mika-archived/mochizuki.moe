@@ -126,6 +126,14 @@ const projects: IProject[] = sortBy([
     description: "This website!",
     isOpenSource: true,
     repository: "mika-f/mika-f.github.io",
+  },
+  {
+    name: "Robock",
+    website: "https://robock.mochizuki.moe",
+    languages: ["C#", "C++", "C", "HLSL"],
+    description: "Window Capture + Dynamic Wallpaper = Good Experience",
+    isOpenSource: true,
+    repository: "mika-f/Robock"
   }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 
