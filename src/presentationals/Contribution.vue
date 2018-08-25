@@ -41,7 +41,7 @@ export default class Contribution extends Vue {
   @Prop(Object) public contribution!: IProject;
 
   public get repositoryProvider(): string {
-    return (this.contribution.repository || "").indexOf("gitlab") ? "GitLab" : "GitHub";
+    return (this.contribution.repository || "").indexOf("gitlab") > 0 ? "GitLab" : "GitHub";
   }
 
   public get repositoryUrl(): string {
