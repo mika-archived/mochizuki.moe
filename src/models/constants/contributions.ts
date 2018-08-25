@@ -24,6 +24,14 @@ const contributions: IProject[] = sortBy([
     role: ["Frontend", "Backend", "Infrastructure"],
     languages: ["Ruby", "JavaScript", "TypeScript", "Vue"],
     isOpenSource: false
+  },
+  {
+    name: "tagbottle",
+    website: "https://docs.tagbottle.com/",
+    prs: [399],
+    languages: ["JavaScript", "TypeScript", "Vue"],
+    isOpenSource: true,
+    repository: "https://gitlab.com/tagbottle/tagbottle.com"
   }
 ] as IProject[], ["name"]);
 

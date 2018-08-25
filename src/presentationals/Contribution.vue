@@ -6,7 +6,7 @@
       template
         language-badges(:languages="contribution.languages")
         template(v-if="contribution.isOpenSource")
-          a(:href="`https://github.com/${contribution.repository}`" target="_blank") GitHub
+          a(:href="repositoryUrl" target="_blank") {{repositoryProvider}}
           | ・
         a(:href="contribution.website" target="_blank") Website
         br
@@ -16,10 +16,10 @@
             li.role(v-for="role in contribution.role" :key="role")
               | {{role}}
         template(v-if="contribution.prs")
-          | Merged PRs : 
+          | {{`Merged PR${contribution.prs.length == 1 ? "" : "s"} :`}} 
           ul
             li.role(v-for="pr in contribution.prs" :key="pr")
-              a(:href="`https://github.com/${contribution.repository}/pull/${pr}`" target="_blank")
+              a(:href="prUrl(pr)" target="_blank")
                 | {{`#${pr}`}}
 
 
@@ -39,6 +39,22 @@ import { IProject } from "@/models/project";
 })
 export default class Contribution extends Vue {
   @Prop(Object) public contribution!: IProject;
+
+  public get repositoryProvider(): string {
+    return (this.contribution.repository || "").indexOf("gitlab") ? "GitLab" : "GitHub";
+  }
+
+  public get repositoryUrl(): string {
+    return this.repositoryProvider === "GitHub"
+      ? `https://github.com/${this.contribution.repository}`
+      : (this.contribution.repository as string);
+  }
+
+  public prUrl(pr: number): string {
+    return this.repositoryProvider === "GitHub"
+      ? `https://github.com/${this.contribution.repository}/pull/${pr}`
+      : `${this.contribution.repository}/merge_requests/${pr}`;
+  }
 }
 </script>
 
