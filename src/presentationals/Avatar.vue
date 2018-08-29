@@ -1,6 +1,6 @@
 <template lang="pug">
   .round
-    img(:src="src")
+    img(:src="src" alt="avatar")
 </template>
 
 <script lang="ts">

@@ -6,9 +6,9 @@
       template
         language-badges(:languages="contribution.languages")
         template(v-if="contribution.isOpenSource")
-          a(:href="repositoryUrl" target="_blank") {{repositoryProvider}}
+          a(:href="repositoryUrl" target="_blank" rel="noreferrer") {{repositoryProvider}}
           | ・
-        a(:href="contribution.website" target="_blank") Website
+        a(:href="contribution.website" target="_blank" rel="noreferrer") Website
         br
         template(v-if="contribution.role")
           | Work as : 
@@ -19,7 +19,7 @@
           | {{`Merged PR${contribution.prs.length == 1 ? "" : "s"} :`}} 
           ul
             li.role(v-for="pr in contribution.prs" :key="pr")
-              a(:href="prUrl(pr)" target="_blank")
+              a(:href="prUrl(pr)" target="_blank" rel="noreferrer")
                 | {{`#${pr}`}}
 
 

@@ -21,7 +21,8 @@ export default class DynamicLink extends Vue {
     if (this.type === "a") {
       return {
         href: this.href,
-        target: "_blank"
+        target: "_blank",
+        rel: "noreferrer"
       };
     }
     return {

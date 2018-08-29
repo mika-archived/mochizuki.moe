@@ -28,7 +28,7 @@
             .items
               .item.tooltip(v-for="link in links" :key="link.icon.replace(' ', '.')" :data-tooltip="link.text")
                 template(v-if="link.href.startsWith('http')")
-                  a(:href="link.href" target="_blank")
+                  a(:href="link.href" target="_blank" rel="noreferrer")
                     font-awesome(:icon="link.icon")
                 template(v-else)
                   a(:href="link.href")

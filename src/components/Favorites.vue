@@ -10,7 +10,7 @@
           .items
             .item(v-for="favorite in favorite.favorites" :key="favorite.name")
               | ・
-              a(:href="favorite.href" target="_blank") {{favorite.name}}
+              a(:href="favorite.href" target="_blank" rel="noreferrer") {{favorite.name}}
           .divider
 </template>
 

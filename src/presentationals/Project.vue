@@ -7,7 +7,7 @@
     p
       language-badges(:languages="project.languages")
       template(v-if="project.isOpenSource")
-        a(:href="`https://github.com/${project.repository}`" target="_blank") GitHub
+        a(:href="`https://github.com/${project.repository}`" target="_blank" rel="noreferrer") GitHub
         | ・
       dynamic-link(:href="project.website") Website
       br
