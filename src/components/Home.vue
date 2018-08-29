@@ -12,7 +12,7 @@
         .card-body
           section
             p
-              | I am a frontend, backend and .NET engineer making web apps, modules, Windows apps and .NET libraries.
+              | I am a * engineer making web apps, modules, Windows apps and .NET libraries.
               br
               | If you are interested in me, please see also 
               router-link(to="projects") projects

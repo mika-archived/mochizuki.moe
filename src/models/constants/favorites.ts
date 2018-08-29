@@ -80,6 +80,10 @@ const favorites: ICategorizedFavorites = {
           name: "ソフィー・ノイエンミュラー",
           // tslint:disable-next-line:max-line-length
           href: "https://dic.pixiv.net/a/%E3%82%BD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%BB%E3%83%8E%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%9F%E3%83%A5%E3%83%A9%E3%83%BC"
+        },
+        {
+          name: "初音ミク",
+          href: "https://dic.pixiv.net/a/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
