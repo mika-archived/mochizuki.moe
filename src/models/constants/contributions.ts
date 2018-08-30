@@ -28,7 +28,7 @@ const contributions: IProject[] = sortBy([
   {
     name: "tagbottle",
     website: "https://docs.tagbottle.com/",
-    prs: [399, 472],
+    prs: [399, 472, 474],
     languages: ["JavaScript", "TypeScript", "Vue"],
     isOpenSource: true,
     repository: "https://gitlab.com/tagbottle/tagbottle.com"
