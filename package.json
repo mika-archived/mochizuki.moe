@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "prebuild": "rm -r ./static/css ./static/js",
     "build": "vue-cli-service build",
-    "postbuild": "cp -r ./dist/* ./ ",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
