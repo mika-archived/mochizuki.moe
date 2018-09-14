@@ -4,8 +4,6 @@
 
 ## Build Setup
 
-> NOTE: If you are using Windows, I recommend using MinGW for building.
-
 ```bash
 # install dependencies
 yarn
