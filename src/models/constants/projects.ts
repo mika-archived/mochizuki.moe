@@ -134,6 +134,14 @@ const projects: IProject[] = sortBy([
     description: "Window Capture + Dynamic Wallpaper = Good Experience",
     isOpenSource: true,
     repository: "mika-f/Robock"
+  },
+  {
+    name: "Disboard",
+    website: "https://www.nuget.org/packages?q=Disboard",
+    languages: ["C#"],
+    description: "Collection of fediverse client libraries for .NET Standard 2.0.",
+    isOpenSource: true,
+    repository: "OrionDevelop/Disboard"
   }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 

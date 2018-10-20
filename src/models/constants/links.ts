@@ -30,6 +30,11 @@ const links: ILink[] = [
     icon: "fab fa-ethereum",
     href: "https://etherscan.io/address/0x3cD67f16C2D7FE518E924930f645DD73AAdAAF39",
     text: "Donate via Ethereum"
+  },
+  {
+    icon: "fab fa-patreon",
+    href: "https://www.patreon.com/mikazuki",
+    text: "Become a patreon",
   }
 ];
 
