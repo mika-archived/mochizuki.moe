@@ -142,6 +142,14 @@ const projects: IProject[] = sortBy([
     description: "Collection of fediverse client libraries for .NET Standard 2.0.",
     isOpenSource: true,
     repository: "OrionDevelop/Disboard"
+  },
+  {
+    name: "Pixela",
+    website: "https://www.nuget.org/packages/Pixela",
+    languages: ["C#"],
+    description: "Pixela API for .NET Standard 2.0",
+    isOpenSource: true,
+    repository: "mika-f/Pixela"
   }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 
