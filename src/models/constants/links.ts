@@ -34,7 +34,7 @@ const links: ILink[] = [
   {
     icon: "fab fa-patreon",
     href: "https://www.patreon.com/mikazuki",
-    text: "Become a patreon",
+    text: "Become a patron",
   }
 ];
 
