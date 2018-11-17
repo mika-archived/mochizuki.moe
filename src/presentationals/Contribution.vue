@@ -11,7 +11,7 @@
         a(:href="contribution.website" target="_blank" rel="noreferrer") Website
         br
         template(v-if="contribution.role")
-          | Work as : 
+          | 担当 : 
           ul
             li.role(v-for="role in contribution.role" :key="role")
               | {{role}}
@@ -38,7 +38,8 @@ import { IProject } from "@/models/project";
   }
 })
 export default class Contribution extends Vue {
-  @Prop(Object) public contribution!: IProject;
+  @Prop(Object)
+  public contribution!: IProject;
 
   public get repositoryProvider(): string {
     return (this.contribution.repository || "").indexOf("gitlab") > 0 ? "GitLab" : "GitHub";

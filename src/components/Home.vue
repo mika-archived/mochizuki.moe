@@ -12,17 +12,17 @@
         .card-body
           section
             p
-              | I am a ████ making web apps, modules, Windows apps and .NET libraries.
+              | なにかいろいろやっているように見えますが、とくになにもできません。
               br
-              | If you are interested in me, please see also 
-              router-link(to="projects") projects
-              | , 
-              router-link(to="contributions") contributions
-              | , 
-              router-link(to="personality") personality
-              | &nbsp;and 
-              router-link(to="favorites") favorites
-              | &nbsp;(ӧ◡ӧ✿).
+              | それでも私に興味があるなら、
+              router-link(to="projects") 個人プロジェクト
+              | や&nbsp;
+              router-link(to="contributions") やってきたこと
+              | 、
+              router-link(to="personality") パーソナリティ
+              | 、 
+              router-link(to="favorites") 大好きなもの
+              | をどうぞ (ӧ◡ӧ✿).
 
           section
             .items

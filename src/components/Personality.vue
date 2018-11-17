@@ -3,18 +3,17 @@
     breadcrumb
     .card
       .card-header
-        .card-title.h3 Personality
+        .card-title.h3 パーソナリティ
       .card-body
         section
           p
-            | My personality attributes are...
+            | 私の個人の属性は...
             ul
-              li Introverted
-              li Mentally Unstable
-              li Turbulent
-              li Self-denial
-            | I think, I am not suited for working.
-            | But, I like to make a new things.
+              li マイナス思考
+              li 情緒不安定
+              li 自己否定的
+              li メンヘラ
+            | 働くのには向いていないと思うけど、何かしら新しいものを作るのは好きです。
 </template>
 
 <script lang="ts">

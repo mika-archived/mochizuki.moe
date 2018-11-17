@@ -3,7 +3,7 @@
     breadcrumb
     .card
       .card-header
-        .card-title.h3 Projects
+        .card-title.h3 個人プロジェクト
       .card-body
         .items
           .item(v-for="project in projects" :key="project.name")

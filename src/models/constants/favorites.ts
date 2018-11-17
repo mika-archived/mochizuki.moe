@@ -5,7 +5,7 @@ import { ICategorizedFavorites, IFavorite } from "@/models/favorite";
 const favorites: ICategorizedFavorites = {
   categories: [
     {
-      name: "Anime",
+      name: "アニメ",
       favorites: sortBy([
         {
           name: "ALDNOAH.ZERO",
@@ -54,7 +54,7 @@ const favorites: ICategorizedFavorites = {
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
     {
-      name: "Character",
+      name: "キャラクター",
       favorites: sortBy([
         {
           name: "望月杏奈",
@@ -88,7 +88,7 @@ const favorites: ICategorizedFavorites = {
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
     {
-      name: "Music",
+      name: "音楽",
       favorites: sortBy([
         {
           name: "supercell",
@@ -130,22 +130,42 @@ const favorites: ICategorizedFavorites = {
         {
           name: "40meterP",
           href: "https://www.youtube.com/channel/UCG09qajPDZdPtLsTkW7mJQA"
+        },
+        {
+          name: "YuNi",
+          href: "https://www.youtube.com/channel/UCHTnX0CSX_KObo5I9WuZ64g"
+        },
+        {
+          name: "三月のパンタシア",
+          href: "http://www.phantasia.jp/"
+        },
+        {
+          name: "DECO*27",
+          href: "http://deco27.com/"
+        },
+        {
+          name: "Kizuna AI",
+          href: "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
     {
-      name: "Playlists",
+      name: "プレイリスト",
       favorites: sortBy([
         {
-          name: "VOCALOID on YouTube",
+          name: "VOCALOID - YouTube",
           href: "https://www.youtube.com/playlist?list=PL2t1NYPsZqCOxjK1fpOOREWM9az9xtzOE"
+        },
+        {
+          name: "Cover - YouTube",
+          href: "https://www.youtube.com/playlist?list=PL2t1NYPsZqCNXqdCIdv3t7rHmvrR8b5Cl"
         },
         {
           name: "SoundCloud",
           href: "https://soundcloud.com/mikazuki_f/likes"
         },
         {
-          name: "VOCALOID on niconico",
+          name: "VOCALOID - niconico",
           href: "http://www.nicovideo.jp/mylist/61087753"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())

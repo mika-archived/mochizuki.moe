@@ -3,7 +3,7 @@
     breadcrumb
     .card
       .card-header
-        .card-title.h3 Favorites
+        .card-title.h3 好きなもの
       .card-body
         section(v-for="favorite in favorites.categories" :key="favorite.name")
           h5 {{favorite.name}}

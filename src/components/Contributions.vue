@@ -3,7 +3,7 @@
     breadcrumb
     .card
       .card-header
-        .card-title.h3 I contribute to ...
+        .card-title.h3 お仕事とかそういうの
       .card-body
         .items
           .item(v-for="contribution in contributions" :key="contribution.name")

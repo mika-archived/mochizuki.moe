@@ -14,14 +14,14 @@ const contributions: IProject[] = sortBy([
   {
     name: "MAngaNIA",
     website: "https://mangania.jp",
-    role: ["Frontend", "Backend"],
+    role: ["フロント", "サーバー"],
     languages: ["Ruby", "JavaScript", "CoffeeScript"],
     isOpenSource: false
   },
   {
     name: "CLEN",
     website: "https://clen.be",
-    role: ["Frontend", "Backend", "Infrastructure"],
+    role: ["フロント", "サーバー", "インフラ (AWS)"],
     languages: ["Ruby", "JavaScript", "TypeScript", "Vue"],
     isOpenSource: false
   },
