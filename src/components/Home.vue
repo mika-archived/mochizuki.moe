@@ -1,7 +1,7 @@
 <template lang="pug">
   .content
     section
-      avatar.avatar-local(src="https://www.gravatar.com/avatar/8f7571eb815b4c6b2ef883b1c8ed97dd?s=256")
+      avatar.avatar-local(src="/img/icon.png")
     
     section
       h2 Fuyuno Mikazuki
