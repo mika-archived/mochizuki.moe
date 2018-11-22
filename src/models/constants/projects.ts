@@ -64,7 +64,7 @@ const projects: IProject[] = sortBy([
     name: "Pyxis",
     website: "https://kokoiroworks.com/pyx/",
     languages: ["C#"],
-    description: "PC 向けの pixiv ビューアー",
+    description: "Windows 向けの pixiv ビューアー",
     isOpenSource: false
   },
   {
