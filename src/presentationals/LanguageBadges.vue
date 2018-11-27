@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    span.badge(v-for="language in languages" :class="asClass(language)")
+    span.badge.mr-1(v-for="language in languages" :class="asClass(language)")
       | {{language}}
 </template>
 
@@ -22,12 +22,7 @@ export default class LanguageBadges extends Vue {
 
 <style lang="scss" scoped>
 .badge {
-  margin: 0 5px 0 0;
-
-  &::not(:first-child) {
-    margin: 0 5px;
-  }
-
+  // override
   &::after {
     content: none;
   }

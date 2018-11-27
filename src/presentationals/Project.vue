@@ -1,17 +1,19 @@
 <template lang="pug">
   div
-    h4
+    h4.mb-2
       | {{project.name}}
       template(v-if="project.isArchived")
         small.text-gray &nbsp;archived
-    p
+
+    section
       language-badges(:languages="project.languages")
-      template(v-if="project.isOpenSource")
-        a(:href="`https://github.com/${project.repository}`" target="_blank" rel="noreferrer") GitHub
-        | ・
-      dynamic-link(:href="project.website") Website
-      br
-      | {{project.description}}
+      p.leading-normal
+        template(v-if="project.isOpenSource")
+          a(:href="`https://github.com/${project.repository}`" target="_blank" rel="noreferrer") GitHub
+          | ・
+        dynamic-link(:href="project.website") Website
+        br
+        | {{project.description}}
 </template>
 
 <script lang="ts">
@@ -39,13 +41,3 @@ export default class Project extends Vue {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin-bottom: 0.2em;
-}
-</style>
