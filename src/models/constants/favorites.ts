@@ -84,6 +84,10 @@ const favorites: ICategorizedFavorites = {
         {
           name: "初音ミク",
           href: "https://dic.pixiv.net/a/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF"
+        },
+        {
+          name: "ときのそら",
+          href: "https://dic.pixiv.net/a/%E3%81%A8%E3%81%8D%E3%81%AE%E3%81%9D%E3%82%89"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
@@ -146,6 +150,11 @@ const favorites: ICategorizedFavorites = {
         {
           name: "Kizuna AI",
           href: "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA"
+        },
+        {
+          name: "individuals",
+          // tslint:disable-next-line:max-line-length
+          href: "https://dic.pixiv.net/a/%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B4%E3%82%A3%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%BA"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
