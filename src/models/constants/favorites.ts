@@ -178,6 +178,31 @@ const favorites: ICategorizedFavorites = {
           href: "http://www.nicovideo.jp/mylist/61087753"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
+    },
+    {
+      name: "おすすめレシピ",
+      favorites: sortBy([
+        {
+          name: "油淋鶏",
+          href: "https://cookpad.com/recipe/2071626"
+        },
+        {
+          name: "塩から揚げ",
+          href: "https://cookpad.com/recipe/2211260"
+        },
+        {
+          name: "豆腐ハンバーグ",
+          href: "https://cookpad.com/recipe/1808874"
+        },
+        {
+          name: "ジャーマンポテト",
+          href: "https://cookpad.com/recipe/2078143"
+        },
+        {
+          name: "プリン",
+          href: "https://cookpad.com/recipe/723942"
+        }
+      ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     }
   ]
 };
