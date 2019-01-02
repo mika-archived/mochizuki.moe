@@ -11,9 +11,9 @@
 
       section.my-4
         p
-          | なにかいろいろやっているように見えますが、とくになにもできません。
+          | 好きなものを好きだと言い続けることを使命に生きています。
           br
-          | それでも私に興味があるなら、
+          | 私に興味があるなら、
           router-link(to="projects") 個人プロジェクト
           | や&nbsp;
           router-link(to="contributions") やってきたこと
@@ -31,7 +31,6 @@
           template(v-else)
             a(:href="link.href")
               font-awesome(:icon="link.icon")
-
 </template>
 
 <script lang="ts">
