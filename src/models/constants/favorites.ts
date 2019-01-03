@@ -88,6 +88,28 @@ const favorites: ICategorizedFavorites = {
         {
           name: "ときのそら",
           href: "https://dic.pixiv.net/a/%E3%81%A8%E3%81%8D%E3%81%AE%E3%81%9D%E3%82%89"
+        },
+        {
+          name: "葛飾北斎 (Fate)",
+          href: "https://dic.pixiv.net/a/%E8%91%9B%E9%A3%BE%E5%8C%97%E6%96%8E%28Fate%29"
+        },
+        {
+          name: "玉藻の前",
+          href: "https://dic.pixiv.net/a/%E3%82%AD%E3%83%A3%E3%82%B9%E3%82%BF%E3%83%BC%28Fate%2FEXTRA%29"
+        },
+        {
+          name: "アタランテ (Fate)",
+          href: "https://dic.pixiv.net/a/%E3%82%A2%E3%82%BF%E3%83%A9%E3%83%B3%E3%83%86%28Fate%29"
+        },
+        {
+          name: "アーチャー・インフェルノ",
+          // tslint:disable-next-line:max-line-length
+          href: "https://dic.pixiv.net/a/%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A7%E3%83%AB%E3%83%8E"
+        },
+        {
+          name: "フィリス・ミストルート",
+          // tslint:disable-next-line:max-line-length
+          href: "https://dic.pixiv.net/a/%E3%83%95%E3%82%A3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%9F%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%88"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
