@@ -36,12 +36,12 @@ const projects: IProject[] = sortBy([
     repository: "mika-f/webshop-url-shortener"
   },
   {
-    name: "crypto-faucets",
+    name: "ccfaucet.mochizuki.moe",
     website: "https://ccfaucet.mochizuki.moe",
     languages: ["Vue", "TypeScript", "JavaScript"],
     description: "仮想通貨の蛇口リスト",
     isOpenSource: true,
-    repository: "mika-f/crypto-faucets"
+    repository: "mika-f/ccfaucet.mochizuki.moe"
   },
   {
     name: "Norma",
@@ -120,12 +120,12 @@ const projects: IProject[] = sortBy([
     isArchived: true
   },
   {
-    name: "mika-f.github.io",
+    name: "mochizuki.moe",
     website: "/",
     languages: ["TypeScript", "Vue", "JavaScript"],
     description: "このサイト",
     isOpenSource: true,
-    repository: "mika-f/mika-f.github.io",
+    repository: "mika-f/mochizuki.moe",
   },
   {
     name: "Robock",
@@ -158,6 +158,14 @@ const projects: IProject[] = sortBy([
     description: "Misskey での1日の投稿数を Pixela にプロットする Azure Functions",
     isOpenSource: true,
     repository: "mika-f/Missxel"
+  },
+  {
+    name: "Cocono",
+    website: "https://cocono.mochizuki.moe",
+    languages: ["TypeScript"],
+    description: "処理を挟むことが出来る Webhook リレーサーバー",
+    isOpenSource: true,
+    repository: "mika-f/Cocono"
   }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 
