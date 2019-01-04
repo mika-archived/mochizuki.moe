@@ -181,6 +181,19 @@ const favorites: ICategorizedFavorites = {
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
     {
+      name: "イラスト・漫画",
+      favorites: sortBy([
+        {
+          name: "三嶋くろね",
+          href: "http://shiropro.com/"
+        },
+        {
+          name: "りんごくらぶ",
+          href: "https://twitter.com/000apple"
+        }
+      ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
+    },
+    {
       name: "プレイリスト",
       favorites: sortBy([
         {
@@ -201,6 +214,7 @@ const favorites: ICategorizedFavorites = {
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
+
     {
       name: "おすすめレシピ",
       favorites: sortBy([
