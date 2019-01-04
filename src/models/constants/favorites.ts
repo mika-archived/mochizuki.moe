@@ -190,6 +190,18 @@ const favorites: ICategorizedFavorites = {
         {
           name: "りんごくらぶ",
           href: "https://twitter.com/000apple"
+        },
+        {
+          name: "佐倉おりこ",
+          href: "https://www.sakuraoriko.com/"
+        },
+        {
+          name: "杏仁豆腐",
+          href: "https://www.pixiv.net/member.php?id=16630"
+        },
+        {
+          name: "ミカ ピカゾ",
+          href: "https://www.pixiv.net/member.php?id=1039353"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
