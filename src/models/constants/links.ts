@@ -7,6 +7,11 @@ const links: ILink[] = [
     text: "Follow me on Twitter"
   },
   {
+    icon: "fab fa-mastodon",
+    href: "https://don.nako.ne.jp/@mika",
+    text: "Follow me on Mastodon"
+  },
+  {
     icon: "fab fa-github",
     href: "https://github.com/mika-f",
     text: "Follow me on GitHub"
