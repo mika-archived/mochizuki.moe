@@ -15,7 +15,7 @@
           br
           | 私に興味があるなら、
           router-link(to="projects") 個人プロジェクト
-          | や&nbsp;
+          | や
           router-link(to="contributions") やってきたこと
           | 、
           router-link(to="personality") パーソナリティ
