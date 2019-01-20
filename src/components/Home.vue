@@ -20,6 +20,8 @@
           router-link(to="contributions") やってきたこと
           | 、
           router-link(to="personality") パーソナリティ
+          | 、
+          router-link(to="activities") 日々の活動
           | 、 
           router-link(to="favorites") 大好きなもの
           | をどうぞ (ӧ◡ӧ✿).

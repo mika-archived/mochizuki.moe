@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 import { IRootState } from "@/models/state";
+import { activities } from "@/models/constants/activities";
 import { contributions } from "@/models/constants/contributions";
 import { favorites } from "@/models/constants/favorites";
 import { links } from "@/models/constants/links";
@@ -11,6 +12,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store<IRootState>({
   state: {
+    activities,
     contributions,
     favorites,
     links,
