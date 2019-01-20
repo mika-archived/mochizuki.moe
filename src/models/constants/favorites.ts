@@ -69,14 +69,6 @@ const favorites: ICategorizedFavorites = {
           href: "https://dic.pixiv.net/a/%E5%8F%8C%E8%91%89%E6%9D%8F"
         },
         {
-          name: "猫宮ひなた",
-          href: "https://dic.pixiv.net/a/%E7%8C%AB%E5%AE%AE%E3%81%B2%E3%81%AA%E3%81%9F"
-        },
-        {
-          name: "ロボ子さん",
-          href: "https://dic.pixiv.net/a/%E3%83%AD%E3%83%9C%E5%AD%90%E3%81%95%E3%82%93"
-        },
-        {
           name: "ソフィー・ノイエンミュラー",
           // tslint:disable-next-line:max-line-length
           href: "https://dic.pixiv.net/a/%E3%82%BD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%BB%E3%83%8E%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%9F%E3%83%A5%E3%83%A9%E3%83%BC"
@@ -84,10 +76,6 @@ const favorites: ICategorizedFavorites = {
         {
           name: "初音ミク",
           href: "https://dic.pixiv.net/a/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF"
-        },
-        {
-          name: "ときのそら",
-          href: "https://dic.pixiv.net/a/%E3%81%A8%E3%81%8D%E3%81%AE%E3%81%9D%E3%82%89"
         },
         {
           name: "葛飾北斎 (Fate)",
@@ -110,6 +98,27 @@ const favorites: ICategorizedFavorites = {
           name: "フィリス・ミストルート",
           // tslint:disable-next-line:max-line-length
           href: "https://dic.pixiv.net/a/%E3%83%95%E3%82%A3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%9F%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%88"
+        }
+      ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
+    },
+    {
+      name: "VTuber",
+      favorites: sortBy([
+        {
+          name: "猫宮ひなた",
+          href: "https://dic.pixiv.net/a/%E7%8C%AB%E5%AE%AE%E3%81%B2%E3%81%AA%E3%81%9F"
+        },
+        {
+          name: "ロボ子さん",
+          href: "https://dic.pixiv.net/a/%E3%83%AD%E3%83%9C%E5%AD%90%E3%81%95%E3%82%93"
+        },
+        {
+          name: "ときのそら",
+          href: "https://dic.pixiv.net/a/%E3%81%A8%E3%81%8D%E3%81%AE%E3%81%9D%E3%82%89"
+        },
+        {
+          name: "電脳少女シロ",
+          href: "https://dic.pixiv.net/a/%E9%9B%BB%E8%84%B3%E5%B0%91%E5%A5%B3YouTuber%E3%82%B7%E3%83%AD"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
@@ -177,6 +186,10 @@ const favorites: ICategorizedFavorites = {
           name: "individuals",
           // tslint:disable-next-line:max-line-length
           href: "https://dic.pixiv.net/a/%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B4%E3%82%A3%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%BA"
+        },
+        {
+          name: "道明寺ここあ",
+          href: "https://www.youtube.com/channel/UCCebk1_w5oiMUTRxdNJq0sA"
         }
       ] as IFavorite[], (w: IFavorite) => w.name.toLocaleLowerCase())
     },
