@@ -1,8 +1,10 @@
+import { IActivity } from "@/models/activity";
 import { ILink } from "@/models/link";
 import { ICategorizedFavorites } from "@/models/favorite";
 import { IProject } from "@/models/project";
 
 export interface IRootState {
+  activities: IActivity[];
   contributions: IProject[];
   favorites: ICategorizedFavorites;
   links: ILink[];

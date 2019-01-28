@@ -11,6 +11,7 @@
 
       section.my-4
         p
+          | 本当に何も出来ない人です。
           | 好きなものを好きだと言うことを使命に生きています。
           br
           | 私に興味があるなら、
@@ -19,6 +20,8 @@
           router-link(to="contributions") やってきたこと
           | 、
           router-link(to="personality") パーソナリティ
+          | 、
+          router-link(to="activities") 日々の活動
           | 、 
           router-link(to="favorites") 大好きなもの
           | をどうぞ (ӧ◡ӧ✿).
