@@ -4,12 +4,16 @@ import { IActivity } from "../activity";
 
 const activities: IActivity[] = sortBy([
   {
-    name: "Misskey Notes",
+    name: "Misskey 投稿数",
     link: "https://pixe.la/v1/users/mika/graphs/misskey.html"
   },
   {
-    name: "Twitter Tweets",
+    name: "Twitter 投稿数",
     link: "https://pixe.la/v1/users/mika/graphs/twitter.html"
+  },
+  {
+    name: "描いたイラストの数",
+    link: "https://pixe.la/v1/users/mika/graphs/illust.html"
   }
 ] as IActivity[], (w: IActivity) => w.name.toLocaleLowerCase());
 
