@@ -1,0 +1,23 @@
+@import "~language-badge";
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("./assets/memphis-colorful.png");
+  background-repeat: repeat;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.animated {
+  animation-duration: 0.25s;
+}

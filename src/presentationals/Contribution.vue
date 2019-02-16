@@ -1,25 +1,25 @@
 <template lang="pug">
   div
-    h4
+    h4.pb-2
       | {{contribution.name}}
-    p
-      template
-        language-badges(:languages="contribution.languages")
+    div
+      language-badges(:languages="contribution.languages")
+      p.leading-normal
         template(v-if="contribution.isOpenSource")
-          a(:href="`https://github.com/${contribution.repository}`" target="_blank") GitHub
+          a(:href="repositoryUrl" target="_blank" rel="noreferrer") {{repositoryProvider}}
           | ・
-        a(:href="contribution.website" target="_blank") Website
+        a(:href="contribution.website" target="_blank" rel="noreferrer") Website
         br
         template(v-if="contribution.role")
-          | Work as : 
-          ul
-            li.role(v-for="role in contribution.role" :key="role")
+          | 担当 : 
+          ul.inline
+            li.inline.mr-1.role(v-for="role in contribution.role" :key="role")
               | {{role}}
         template(v-if="contribution.prs")
-          | Merged PRs : 
-          ul
-            li.role(v-for="pr in contribution.prs" :key="pr")
-              a(:href="`https://github.com/${contribution.repository}/pull/${pr}`" target="_blank")
+          | {{`Merged PR${contribution.prs.length == 1 ? "" : "s"} :`}} 
+          ul.inline
+            li.inline.mr-1.role(v-for="pr in contribution.prs" :key="pr")
+              a(:href="prUrl(pr)" target="_blank" rel="noreferrer")
                 | {{`#${pr}`}}
 
 
@@ -38,31 +38,30 @@ import { IProject } from "@/models/project";
   }
 })
 export default class Contribution extends Vue {
-  @Prop(Object) public contribution!: IProject;
+  @Prop(Object)
+  public contribution!: IProject;
+
+  public get repositoryProvider(): string {
+    return (this.contribution.repository || "").indexOf("gitlab") > 0 ? "GitLab" : "GitHub";
+  }
+
+  public get repositoryUrl(): string {
+    return this.repositoryProvider === "GitHub"
+      ? `https://github.com/${this.contribution.repository}`
+      : (this.contribution.repository as string);
+  }
+
+  public prUrl(pr: number): string {
+    return this.repositoryProvider === "GitHub"
+      ? `https://github.com/${this.contribution.repository}/pull/${pr}`
+      : `${this.contribution.repository}/merge_requests/${pr}`;
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin-bottom: 0.2em;
-}
-
 ul {
-  display: inline;
-  list-style: none;
-  margin: 0;
-
-  li {
-    display: inline;
-  }
-
   .role {
-    margin: 0 2.5px 0 0;
-
     &:not(:last-child) {
       &:after {
         content: ",";

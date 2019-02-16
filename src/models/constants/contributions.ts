@@ -14,16 +14,24 @@ const contributions: IProject[] = sortBy([
   {
     name: "MAngaNIA",
     website: "https://mangania.jp",
-    role: ["Frontend", "Backend"],
+    role: ["フロント", "サーバー"],
     languages: ["Ruby", "JavaScript", "CoffeeScript"],
     isOpenSource: false
   },
   {
     name: "CLEN",
     website: "https://clen.be",
-    role: ["Frontend", "Backend", "Infrastructure"],
+    role: ["フロント", "サーバー", "インフラ (AWS)"],
     languages: ["Ruby", "JavaScript", "TypeScript", "Vue"],
     isOpenSource: false
+  },
+  {
+    name: "tagbottle",
+    website: "https://docs.tagbottle.com/",
+    prs: [399, 472, 474],
+    languages: ["JavaScript", "TypeScript", "Vue"],
+    isOpenSource: true,
+    repository: "https://gitlab.com/tagbottle/tagbottle.com"
   }
 ] as IProject[], ["name"]);
 

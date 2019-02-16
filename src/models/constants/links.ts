@@ -7,13 +7,18 @@ const links: ILink[] = [
     text: "Follow me on Twitter"
   },
   {
+    icon: "fab fa-mastodon",
+    href: "https://don.nako.ne.jp/@mika",
+    text: "Follow me on Mastodon"
+  },
+  {
     icon: "fab fa-github",
     href: "https://github.com/mika-f",
     text: "Follow me on GitHub"
   },
   {
     icon: "fas fa-envelope",
-    href: "mailto:me@mochizuki",
+    href: "mailto:me@mochizuki.moe",
     text: "Email to me"
   },
   {
@@ -30,6 +35,11 @@ const links: ILink[] = [
     icon: "fab fa-ethereum",
     href: "https://etherscan.io/address/0x3cD67f16C2D7FE518E924930f645DD73AAdAAF39",
     text: "Donate via Ethereum"
+  },
+  {
+    icon: "fab fa-patreon",
+    href: "https://www.patreon.com/mikazuki",
+    text: "Become a patron",
   }
 ];
 
