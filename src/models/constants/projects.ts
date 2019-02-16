@@ -155,7 +155,7 @@ const projects: IProject[] = sortBy([
     name: "Missxel",
     website: "https://github.com/mika-f/Missxel",
     languages: ["C#"],
-    description: "Misskey での1日の投稿数を Pixela にプロットする Azure Functions",
+    description: "Misskey での1日の投稿数を Pixela に記録する Azure Functions",
     isOpenSource: true,
     repository: "mika-f/Missxel"
   },
@@ -166,6 +166,14 @@ const projects: IProject[] = sortBy([
     description: "処理を挟むことが出来る Webhook リレーサーバー",
     isOpenSource: true,
     repository: "mika-f/Cocono"
+  },
+  {
+    name: "Pixitter",
+    website: "https://github.com/mika-f/Pixitter",
+    languages: ["TypeScript"],
+    description: "1日のツイート数を Pixela に記録する Lambda Function",
+    isOpenSource: true,
+    repository: "mika-f/Pixitter"
   }
 ] as IProject[], (w: IProject) => w.name.toLocaleLowerCase());
 
