@@ -748,10 +748,10 @@
   dependencies:
     "@types/babel-types" "*"
 
-"@types/lodash@4.14.111":
-  version "4.14.111"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.111.tgz#d926250baa9526c0ffe85914dd10363068e7893a"
-  integrity sha512-t2FwnkdqdZNYPJHTEF+Zf//j5d2I7UbM2Ng+vqqmUCE2RuiVVINJi9RlVdpKvqPqVItsJa0X+ra/tvmwLzlcgg==
+"@types/lodash@4.14.123":
+  version "4.14.123"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.123.tgz#39be5d211478c8dd3bdae98ee75bb7efe4abfe4d"
+  integrity sha512-pQvPkc4Nltyx7G1Ww45OjVqUsJP4UsZm+GWJpigXgkikZqJgRm4c48g027o6tdgubWHwFRF15iFd+Y4Pmqv6+Q==
 
 "@types/node@*":
   version "10.5.2"
