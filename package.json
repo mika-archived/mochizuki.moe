@@ -11,7 +11,7 @@
     "language-badge": "1.0.1",
     "lodash": "4.17.11",
     "vue": "2.5.16",
-    "vue-class-component": "6.2.0",
+    "vue-class-component": "6.3.2",
     "vue-property-decorator": "6.1.0",
     "vue-router": "3.0.2",
     "vuex": "3.0.1",
