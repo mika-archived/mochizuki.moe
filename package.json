@@ -3,30 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && cp _headers ./dist/",
-    "lint": "vue-cli-service lint"
+    "lint": "stylelint src/**/*.{scss,css,tsx} && eslint src/**/*.{js,ts,tsx}"
   },
   "dependencies": {
-    "language-badge": "1.0.1",
-    "lodash": "4.17.15",
-    "vue": "2.5.16",
-    "vue-class-component": "7.0.2",
-    "vue-property-decorator": "8.1.1",
-    "vue-router": "3.0.4",
-    "vuex": "3.1.0",
-    "vuex-class": "0.3.2"
+    "colors.css": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.1.0",
     "@testing-library/react": "^9.1.4",
     "@testing-library/react-hooks": "^2.0.1",
-    "@types/lodash": "4.14.123",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
-    "@vue/cli-plugin-babel": "3.0.0-rc.3",
-    "@vue/cli-plugin-typescript": "3.0.0-rc.3",
-    "@vue/cli-service": "3.0.0-rc.3",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -38,27 +33,16 @@
     "eslint-plugin-react-hooks": "^2.0.1",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
-    "node-sass": "4.12.0",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
-    "pug": "2.0.3",
-    "pug-plain-loader": "1.0.0",
     "react-test-renderer": "^16.9.0",
-    "sass-loader": "7.1.0",
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-recess-order": "^2.0.3",
     "stylelint-config-standard": "^18.3.0",
-    "tailwindcss": "0.7.4",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
     "ts-node-dev": "^1.0.0-pre.42",
-    "typescript": "^3.6.3",
-    "vue-template-compiler": "2.5.16"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "typescript": "^3.6.3"
+  }
 }
