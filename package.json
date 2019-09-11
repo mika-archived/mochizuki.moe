@@ -4,30 +4,30 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cp _headers ./dist/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "language-badge": "^1.0.1",
-    "lodash": "^4.17.10",
-    "vue": "^2.5.16",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vuex-class": "^0.3.1"
+    "language-badge": "1.0.1",
+    "lodash": "4.17.15",
+    "vue": "2.5.16",
+    "vue-class-component": "7.0.2",
+    "vue-property-decorator": "8.1.1",
+    "vue-router": "3.0.4",
+    "vuex": "3.1.0",
+    "vuex-class": "0.3.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.111",
-    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
-    "@vue/cli-plugin-typescript": "^3.0.0-beta.15",
-    "@vue/cli-service": "^3.0.0-beta.15",
-    "node-sass": "^4.9.0",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.0.1",
-    "tailwindcss": "^0.7.2",
-    "vue-template-compiler": "^2.5.16"
+    "@types/lodash": "4.14.123",
+    "@vue/cli-plugin-babel": "3.0.0-rc.3",
+    "@vue/cli-plugin-typescript": "3.0.0-rc.3",
+    "@vue/cli-service": "3.0.0-rc.3",
+    "node-sass": "4.12.0",
+    "pug": "2.0.3",
+    "pug-plain-loader": "1.0.0",
+    "sass-loader": "7.1.0",
+    "tailwindcss": "0.7.4",
+    "vue-template-compiler": "2.5.16"
   },
   "browserslist": [
     "> 1%",

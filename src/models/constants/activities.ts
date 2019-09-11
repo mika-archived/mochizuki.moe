@@ -12,7 +12,7 @@ const activities: IActivity[] = sortBy([
     id: "twitter"
   },
   {
-    name: "描いたイラストの数",
+    name: "ワンドロ",
     id: "illust"
   }
 ] as IActivity[], (w: IActivity) => w.name.toLocaleLowerCase());
