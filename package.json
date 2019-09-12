@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "parcel serve ./public/index.html",
-    "build": "vue-cli-service build && cp _headers ./dist/",
+    "build": "parcel build ./public/index.html && cp _headers ./dist/",
     "lint": "stylelint src/**/*.{scss,css,tsx} && eslint src/**/*.{js,ts,tsx}"
   },
   "dependencies": {
