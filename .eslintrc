@@ -3,10 +3,7 @@
     "airbnb",
     "plugin:jest/recommended",
     "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
-    "prettier/react",
-    "prettier/standard"
+    "plugin:prettier/recommended"
   ],
   "plugins": ["@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
@@ -30,12 +27,12 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       "error",
       {
         "extensions": [".js", ".ts", ".jsx", ".tsx"]
       }
-    ]
+    ],
+    "react/prop-types": ["off"]
   }
 }
