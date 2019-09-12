@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "parcel serve ./public/index.html",
     "build": "vue-cli-service build && cp _headers ./dist/",
     "lint": "stylelint src/**/*.{scss,css,tsx} && eslint src/**/*.{js,ts,tsx}"
   },
