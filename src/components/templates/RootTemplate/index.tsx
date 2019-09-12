@@ -46,7 +46,7 @@ const RootTemplate: React.FC<Props> = ({ background, externals, icon }) => {
         <Wrapper>
           <CircularIcon size="256px" src={icon} />
           <Heading>Fuyuno Mikazuki</Heading>
-          <Links externals={externals} iconSize={48} />
+          <Links externals={externals} iconSize={36} />
         </Wrapper>
       </Centering>
     </BackgroundCover>

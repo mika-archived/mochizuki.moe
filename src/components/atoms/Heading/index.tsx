@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Heading = styled.h1`
   font-family: Consolas, "Courier New", monospace;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: normal;
 `;
 
