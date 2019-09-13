@@ -1,5 +1,6 @@
 {
   "extends": [
+    // prettier-ignore
     "airbnb",
     "plugin:jest/recommended",
     "plugin:import/typescript",
@@ -27,6 +28,7 @@
       }
     ],
     "import/prefer-default-export": "off",
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       "error",
       {
