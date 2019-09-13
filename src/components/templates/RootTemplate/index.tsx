@@ -19,7 +19,7 @@ const Centering = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.25);
 `;
 
 const Wrapper = styled.div`
