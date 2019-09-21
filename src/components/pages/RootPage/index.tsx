@@ -4,8 +4,10 @@ import { ExtractProps } from "../../../types/type-helpers";
 import RootTemplate from "../../templates/RootTemplate";
 
 const RootPage: React.FC = () => {
+  const backgrounds = ["vrc_001.png", "vrc_002.png"];
+  const background = backgrounds[Math.floor(Math.random() * 2)];
   const values: ExtractProps<typeof RootTemplate> = {
-    background: "https://ik.imagekit.io/mikazuki/assets/vrc_001.png",
+    background: `https://ik.imagekit.io/mikazuki/assets/${background}`,
     externals: [
       { animateTo: "#1DA1F2", href: "https://twitter.com/MikazukiFuyuno", prefix: "brands", icon: "twitter" },
       { animateTo: "#333333", href: "https://github.com/mika-f", prefix: "brands", icon: "github" },
