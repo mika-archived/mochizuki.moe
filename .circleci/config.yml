@@ -110,9 +110,9 @@ workflows:
       - install_deps:
           requires:
             - checkout_code
-      - test:
-          requires:
-            - install_deps
+      # - test:
+      #     requires:
+      #       - install_deps
       - lint:
           requires:
             - install_deps
@@ -121,7 +121,7 @@ workflows:
             - install_deps
       - deploy:
           requires:
-            - test
+            # - test
             - lint
             - build
           filters:
