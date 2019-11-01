@@ -51,7 +51,7 @@ commands:
     steps:
       - save_cache:
           paths:
-            - build
+            - dist
           key: v1-build-{{ .Branch }}-{{ .Revision }}
 
 jobs:
@@ -95,8 +95,6 @@ jobs:
   deploy:
     executor: node
     steps:
-      - restore_repo
-      - restore_deps
       - restore_artifacts
       - run: yarn global add netlify-cli
       - run: echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
