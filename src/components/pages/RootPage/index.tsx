@@ -12,7 +12,7 @@ const RootPage: React.FC = () => {
       { animateTo: "#1DA1F2", href: "https://twitter.com/MikazukiFuyuno", prefix: "brands", icon: "twitter" },
       { animateTo: "#333333", href: "https://github.com/mika-f", prefix: "brands", icon: "github" },
       { animateTo: "#999999", href: "https://mikazuki.hatenablog.jp", prefix: "regular", icon: "blog" },
-      { animateTo: "#5bbad5", href: "https://mochizuki.dev", prefix: "regular", icon: "browser" }
+      { animateTo: "#5bbad5", href: "https://me.mochizuki.dev", prefix: "regular", icon: "browser" }
     ],
     icon: "https://ik.imagekit.io/mikazuki/assets/anna.png"
   };
