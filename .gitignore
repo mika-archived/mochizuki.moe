@@ -59,9 +59,19 @@ typings/
 
 # next.js build output
 .next
+out
 
 # parcel build caches
 .cache
 
 # dist
 dist
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
