@@ -4,7 +4,7 @@ https://mochizuki.moe repository
 
 ## Archives
 
-If you want to access older version of mochizuki.moe. Please access below urls.
+If you want to access older version of mochizuki.moe, please access below urls.
 
 * https://v1.mochizuki.moe
 * https://v2.mochizuki.moe
