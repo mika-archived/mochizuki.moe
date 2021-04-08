@@ -1,40 +1,25 @@
 {
   "extends": [
-    // prettier-ignore
-    "airbnb",
+    "airbnb-typescript",
+    "prettier",
     "plugin:jest/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
+    "plugin:import/typescript"
   ],
-  "plugins": ["@typescript-eslint"],
-  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
-  },
-  "globals": {
-    "document": true,
-    "window": true
+    },
+    "project": "./tsconfig.json"
   },
   "rules": {
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": ["**/*{.,_}{test,spec}.{js,jsx,ts,tsx}"]
-      }
-    ],
-    "import/prefer-default-export": "off",
-    "prettier/prettier": "error",
-    "react/jsx-filename-extension": [
-      "error",
-      {
-        "extensions": [".js", ".ts", ".jsx", ".tsx"]
-      }
-    ],
-    "react/prop-types": ["off"]
+    "@typescript-eslint/quotes": ["error", "double"],
+    "import/prefer-default-export": ["off"],
+    "react/prop-types": ["off"],
+    "react/require-default-props": ["off"]
   }
 }
