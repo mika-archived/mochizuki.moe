@@ -1,5 +1,6 @@
 import React from "react";
 
+import Head from "next/head";
 import Image from "next/image";
 
 import Container from "../components/container";
@@ -8,6 +9,9 @@ import SectionHeader from "../components/section-header";
 
 const ProfilePage = () => (
   <div>
+    <Head>
+      <title>Profile | Natsuneko Laboratory</title>
+    </Head>
     <Container>
       <h2 className="text-6xl mt-16 mb-16">
         日々のちょっとした「欲しいな」を

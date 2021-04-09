@@ -3,6 +3,7 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
 import Image from "next/image";
 
 import ArticleHeader from "../components/article-header";
@@ -15,6 +16,9 @@ library.add(faGithubAlt);
 
 const WorksPage = () => (
   <div>
+    <Head>
+      <title>Works | Natsuneko Laboratory</title>
+    </Head>
     <Container>
       <Section>
         <SectionHeader title="works" />

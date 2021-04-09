@@ -4,6 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/pro-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
 
 import Container from "../components/container";
 import Section from "../components/section";
@@ -13,6 +14,9 @@ library.add(faDiscord, faEnvelope);
 
 const ContactPage = () => (
   <div>
+    <Head>
+      <title>Contact | Natsuneko Laboratory</title>
+    </Head>
     <Container>
       <Section>
         <SectionHeader title="contact" />

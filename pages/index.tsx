@@ -3,6 +3,7 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubAlt, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
 
 import Container from "../components/container";
 import ExternalLink from "../components/external-link";
@@ -15,6 +16,9 @@ library.add(faGithubAlt, faTwitter);
 
 const IndexPage = () => (
   <div>
+    <Head>
+      <title>Home | Natsuneko Laboratory</title>
+    </Head>
     <div className="w-full relative" style={{ height: "724px" }}>
       <Jumbotron />
       <div className="absolute left-2/4 top-1/3">
