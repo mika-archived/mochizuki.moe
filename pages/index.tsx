@@ -22,7 +22,12 @@ const IndexPage = () => (
     <div className="w-full relative" style={{ height: "724px" }}>
       <Jumbotron />
       <div className="absolute left-2/4 top-1/3">
-        <Logo height={260} width={568} />
+        <div className="hidden lg:block">
+          <Logo height={260} width={568} />
+        </div>
+        <div className="block lg:hidden">
+          <Logo height={130} width={284} />
+        </div>
       </div>
     </div>
     <Container>
