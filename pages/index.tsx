@@ -2,11 +2,11 @@ import React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubAlt, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 
 import Container from "../components/container";
 import ExternalLink from "../components/external-link";
+import FontAwesome from "../components/font-awesome";
 import Jumbotron from "../components/jumbotron";
 import Logo from "../components/logo";
 import Section from "../components/section";
@@ -43,11 +43,11 @@ const IndexPage = () => (
         <SectionHeader title="links" />
         <ul className="text-2xl">
           <li>
-            <FontAwesomeIcon icon={["fab", "github-alt"]} /> GitHub :{" "}
+            <FontAwesome prefix="fab" name="github-alt" /> GitHub :{" "}
             <ExternalLink href="https://github.com/mika-f">@mika-f</ExternalLink>
           </li>
           <li>
-            <FontAwesomeIcon icon={["fab", "twitter"]} /> Twitter :{" "}
+            <FontAwesome prefix="fab" name="twitter" /> Twitter :{" "}
             <ExternalLink href="https://twitter.com/6jz">@6jz</ExternalLink>
           </li>
         </ul>

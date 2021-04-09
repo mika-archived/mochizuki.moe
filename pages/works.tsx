@@ -2,13 +2,13 @@ import React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
 
 import ArticleHeader from "../components/article-header";
 import Container from "../components/container";
 import ExternalLink from "../components/external-link";
+import FontAwesome from "../components/font-awesome";
 import Section from "../components/section";
 import SectionHeader from "../components/section-header";
 
@@ -47,7 +47,7 @@ const WorksPage = () => (
                   href="https://github.com/mika-f/UdonRabbit.Analyzer"
                   aria-label="UdonRabbit Analyzer GitHub Repository"
                 >
-                  <FontAwesomeIcon icon={["fab", "github-alt"]} />
+                  <FontAwesome prefix="fab" name="github-alt" />
                 </ExternalLink>
               </div>
             </div>

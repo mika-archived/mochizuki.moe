@@ -3,10 +3,10 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/pro-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 
 import Container from "../components/container";
+import FontAwesome from "../components/font-awesome";
 import Section from "../components/section";
 import SectionHeader from "../components/section-header";
 
@@ -32,10 +32,10 @@ const ContactPage = () => (
 
         <div className="mt-8 text-lg">
           <p>
-            <FontAwesomeIcon icon={["fab", "discord"]} /> natsuneko#7225
+            <FontAwesome prefix="fab" name="discord" /> natsuneko#7225
           </p>
           <p>
-            <FontAwesomeIcon icon={["far", "envelope"]} /> me@mochizuki.moe
+            <FontAwesome prefix="far" name="envelope" /> me@mochizuki.moe
           </p>
         </div>
       </Section>
