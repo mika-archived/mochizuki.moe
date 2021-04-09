@@ -43,11 +43,15 @@ const IndexPage = () => (
         <SectionHeader title="links" />
         <ul className="text-2xl">
           <li>
-            <FontAwesome prefix="fab" name="github-alt" /> GitHub :{" "}
+            <div className="h-8 inline-block">
+              <FontAwesome prefix="fab" name="github-alt" /> GitHub :{" "}
+            </div>
             <ExternalLink href="https://github.com/mika-f">@mika-f</ExternalLink>
           </li>
           <li>
-            <FontAwesome prefix="fab" name="twitter" /> Twitter :{" "}
+            <div className="h-8 inline-block">
+              <FontAwesome prefix="fab" name="twitter" /> Twitter :{" "}
+            </div>
             <ExternalLink href="https://twitter.com/6jz">@6jz</ExternalLink>
           </li>
         </ul>
