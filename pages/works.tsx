@@ -43,8 +43,11 @@ const WorksPage = () => (
               </p>
 
               <div className="text-4xl mt-4">
-                <ExternalLink href="https://github.com/mika-f/UdonRabbit.Analyzer">
-                  <FontAwesomeIcon icon={["fab", "github-alt"]} aria-label="UdonRabbit Analyzer GitHub Repository" />
+                <ExternalLink
+                  href="https://github.com/mika-f/UdonRabbit.Analyzer"
+                  aria-label="UdonRabbit Analyzer GitHub Repository"
+                >
+                  <FontAwesomeIcon icon={["fab", "github-alt"]} />
                 </ExternalLink>
               </div>
             </div>
@@ -116,8 +119,8 @@ const WorksPage = () => (
               </p>
 
               <div className="text-4xl mt-4">
-                <ExternalLink href="https://natsuneko.booth.pm/items/2540555">
-                  <Image src="/booth.png" height={42} width={120} alt="booth" aria-label="Object Fitter BOOTH" />
+                <ExternalLink href="https://natsuneko.booth.pm/items/2540555" aria-label="Object Fitter BOOTH">
+                  <Image src="/booth.png" height={42} width={120} alt="booth" />
                 </ExternalLink>
               </div>
             </div>
