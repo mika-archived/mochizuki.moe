@@ -49,7 +49,13 @@ const WorksPage = () => (
               </p>
             </div>
             <div className="text-center mt-4">
-              <Image className="rounded" src="/analyzer.png" height={282} width={250} />
+              <Image
+                className="rounded"
+                src="/analyzer.png"
+                height={282}
+                width={250}
+                alt="analyzer error display image"
+              />
             </div>
           </div>
         </div>
@@ -66,7 +72,13 @@ const WorksPage = () => (
               </p>
             </div>
             <div className="text-center mt-4">
-              <Image className="rounded" src="/hairband.png" height={152} width={250} />
+              <Image
+                className="rounded"
+                src="/hairband.png"
+                height={152}
+                width={250}
+                alt="sakura alice hairband image"
+              />
             </div>
           </div>
         </div>
@@ -80,7 +92,13 @@ const WorksPage = () => (
               <p>テクスチャーやアニメーションは一切使わず、パーティクルシステムのパラメータのみで表現しています。</p>
             </div>
             <div className="text-center mt-4">
-              <Image className="rounded" src="/monochrome-ring.png" height={164} width={250} />
+              <Image
+                className="rounded"
+                src="/monochrome-ring.png"
+                height={164}
+                width={250}
+                alt="monochrome particle ring image in hand"
+              />
             </div>
           </div>
         </div>
@@ -104,7 +122,13 @@ const WorksPage = () => (
               </p>
             </div>
             <div className="text-center mt-4">
-              <Image className="rounded" src="/object-fitter.png" height={191} width={250} />
+              <Image
+                className="rounded"
+                src="/object-fitter.png"
+                height={191}
+                width={250}
+                alt="object fitter sample image"
+              />
             </div>
           </div>
         </div>

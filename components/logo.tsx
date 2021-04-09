@@ -10,7 +10,14 @@ type Props = {
 
 const Logo = ({ height, width, fixed }: Props) => (
   <div className="relative">
-    <Image src="/logo.png" height={height} width={width} layout={fixed ? "fixed" : "intrinsic"} loading="eager" />
+    <Image
+      src="/logo.png"
+      height={height}
+      width={width}
+      layout={fixed ? "fixed" : "intrinsic"}
+      loading="eager"
+      alt="logo"
+    />
   </div>
 );
 

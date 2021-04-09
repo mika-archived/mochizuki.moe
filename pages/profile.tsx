@@ -43,7 +43,7 @@ const ProfilePage = () => (
             </p>
           </div>
           <div className="text-center mt-8">
-            <Image className="rounded-full" src="/icon.png" height={256} width={256} />
+            <Image className="rounded-full" src="/icon.png" height={256} width={256} alt="icon" />
           </div>
         </div>
       </Section>
