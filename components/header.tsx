@@ -35,9 +35,7 @@ const Header = () => {
     <>
       <div className="fixed top-0 left-0 right-0 z-10 w-full h-36 bg-wild-sand border-b border-gray-500 flex content-center items-center">
         <div className="flex-initial px-8 py-2">
-          <Link href="/">
-            <Logo height={117} width={256} fixed />
-          </Link>
+          <Logo height={117} width={256} fixed />
         </div>
         <div className="hidden lg:flex flex-auto flex-row-reverse space-x-8 space-x-reverse pr-16">
           <div className="text-3xl uppercase">

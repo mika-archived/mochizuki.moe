@@ -42,11 +42,11 @@ const WorksPage = () => (
                 エディターであれば、使用することが出来ます。
               </p>
 
-              <p className="text-4xl mt-4">
+              <div className="text-4xl mt-4">
                 <ExternalLink href="https://github.com/mika-f/UdonRabbit.Analyzer">
-                  <FontAwesomeIcon icon={["fab", "github-alt"]} />
+                  <FontAwesomeIcon icon={["fab", "github-alt"]} aria-label="UdonRabbit Analyzer GitHub Repository" />
                 </ExternalLink>
-              </p>
+              </div>
             </div>
             <div className="text-center mt-4">
               <Image
@@ -115,11 +115,11 @@ const WorksPage = () => (
                 このワールドギミックを使うことで、衣装を販売している人たちが、販売前に試着会などを行うことが可能になります。
               </p>
 
-              <p className="text-4xl mt-4">
+              <div className="text-4xl mt-4">
                 <ExternalLink href="https://natsuneko.booth.pm/items/2540555">
-                  <Image src="/booth.png" height={42} width={120} />
+                  <Image src="/booth.png" height={42} width={120} alt="booth" aria-label="Object Fitter BOOTH" />
                 </ExternalLink>
-              </p>
+              </div>
             </div>
             <div className="text-center mt-4">
               <Image
